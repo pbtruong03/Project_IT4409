@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://kit.fontawesome.com/bc4d8a1311.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+</head>
+<body onload="loadPage()">
+    <div>
+        <table class="contentPanel">
+            <tbody>
+                <tr>
+                    <!-- LEFT CONTENTS -->
+                    <td>
+                        <div class="left-ContentPanel">
+                            <div class="contentLeft">
+                                <h3 class="contentTitle" id = "fullNametitle">Họ và tên</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="">Thư báo</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Đổi mật khẩu</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Cấp lại mật khẩu Email trường</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Thoát đăng nhập</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Thông tin mật khẩu Email cấp mới</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Xác nhận khai báo y tế</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Quản lý hồ sơ sinh viên</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="">Thông tin sinh viên</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Cập nhật thông tin cá nhân</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Thông tin lớp sinh viên</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Đào tạo</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="">Chương trình đào tạo</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Kế hoạch học tập</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Kết quả học tập</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Đồ án - tốt nghiệp</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Thời khóa biểu tạm thời</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Tư vấn trực tuyến</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="">Hỏi đáp - Tư vấn trực tuyến</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Tài chính học vụ</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="">Thông tin công nợ học phí</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="">Thanh toán học phí trực tuyến</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Dịch vụ hành chính</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="">ĐK cấp giấy tờ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                        </div>
+                    </td>
+                    <!-- RIGHT CONTENT -->
+                    <td >
+                        <div class="right-ContentPanel">
+                            <div class="">
+                                <h3 class="contentTitle center">Thông tin cá nhân</h3>
+                            </div>
+                            <hr>
+                            <!-- Thông tin sinh viên -->
+                            <div class="contentRight">
+                                <div class="" style="display:inline-flex">
+                                    <h3 class="contentTitle">Thông tin sinh viên</h3>
+                                    <a href="/templates/editinfo.html" style="margin:auto 10px;"><button><i class="fa-solid fa-pen-to-square"></i></button></a>
+                                </div>
+                                <div class="flex">
+                                    <div class="blockContent" style="width:25%">
+                                        <div>
+                                            <img src="../assets/img/avatar.png" alt="anh_dai_dien" class="avatar">
+                                        </div>
+                                        <div class="center">
+                                            <span class="text">
+                                                <strong>MSSV:</strong>
+                                                <div class="infostudent" id="studentId">20215498</div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="blockContent">
+                                        <span class="text"><strong>Họ và tên&emsp;: </strong><div id="fullName" class="infostudent">Phan Bá Trường</div></span><br/>
+                                        <span class="text"><strong>Năm vào trường&emsp;: </strong><div id="yearEntering" class="infostudent">2021</div></span><br/>
+                                        <span class="text"><strong>Bậc đào tạo&emsp;: </strong><div id="eduType" class="infostudent">Đại học đại trà</div></span><br/>
+                                        <span class="text"><strong>Chương trình&emsp;: </strong><div id="program" class="infostudent">Khoa học máy tính 2021</div></span><br/>
+                                        <span class="text"><strong>Khoa/Viện quản lý&emsp;: </strong><div id="school" class="infostudent">Trường Công nghệ thông tin và Truyền thông</div></span><br/>
+                                        <span class="text"><strong>Tình trạng học tập&emsp;: </strong><div id="status" class="infostudent">Học</div></span><br/>
+                                    </div>
+                                    <div class="blockContent">
+                                        <span class="text"><strong>Giới tính&emsp;: </strong><div id="sex" class="infostudent">Nam</div></span><br/>
+                                        <span class="text"><strong>Lớp&emsp;: </strong><div id="class" class="infostudent">Khoa học máy tính 04-K66</div></span><br/>
+                                        <span class="text"><strong>Khóa học&emsp;: </strong><div id="course" class="infostudent">66</div></span><br/>
+                                        <span class="text"><strong>Email&emsp;: </strong><div id="email" class="infostudent">truong.pb215498@sis.hust.edu.vn</div></span><br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Thông tin học tập -->
+                            <div class="contentRight">
+                                <h3 class="contentTitle">Thông tin học tập</h3>
+                                <div class="flex">
+                                    <div class="blockContent">
+                                        <span class="text"><strong>Tổng kết học kỳ&emsp;: </strong>20231</span><br/>
+                                        <span class="text"><strong>Trung bình tích lũy&emsp;: </strong>3.28</span><br/>
+                                        <span class="text"><strong>Số TC nợ đăng ký&emsp;: </strong>0</span><br/>
+                                    </div>
+                                    <div class="blockContent">
+                                        <span class="text"><strong>Số tín chỉ tích lũy&emsp;: </strong>83</span><br/>
+                                        <span class="text"><strong>Trình độ sinh viên&emsp;: </strong>3</span><br/>
+                                        <span class="text"><strong>Mức cảnh báo&emsp;: </strong>M0</span><br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Thông tin cá nhân -->
+                            <div class="contentRight">
+                                <h3 class="contentTitle">Thông tin cá nhân</h3>
+                                <div class="flex">
+                                    <div class="blockContent">
+                                        <span class="text"><strong>Dân tộc&emsp;: </strong>KINH</span><br/>
+                                        <span class="text"><strong>Năm TN cấp 3&emsp;: </strong>2021</span><br/>
+                                        <span class="text"><strong>Địa chỉ&emsp;: </strong>XÃ THANH LĨNH, HUYỆN THANH CHƯƠNG, TỈNH NGHỆ AN</span><br/>
+                                        <span class="text"><strong>Số CMTND&emsp;: </strong>188***49</span><br/>
+                                        <span class="text"><strong>Nơi cấp&emsp;: </strong>NGHỆ AN</span><br/>
+                                        <span class="text"><strong>Họ tên bố&emsp;: </strong>PHAN BÁ HÓA</span><br/>
+                                        <span class="text"><strong>Năm sinh&emsp;: </strong>1968</span><br/>
+                                        <span class="text"><strong>Nghề nghiệp&emsp;: </strong>NÔNG DÂN</span><br/>
+                                        <span class="text"><strong>Điện thoại&emsp;: </strong>034***70</span><br/>
+                                        <span class="text"><strong>Email&emsp;: </strong>KHÔNG CÓ</span><br/>
+                                    </div>
+                                    <div class="blockContent">
+                                        <span class="text"><strong>Tôn giáo&emsp;: </strong>KHÔNG</span><br/>
+                                        <span class="text"><strong>Trường THPT&emsp;: </strong>THPT THANH CHƯƠNG 1 - NGHỆ AN</span><br/>
+                                        <span class="text"><strong>Hộ khẩu&emsp;: </strong>XÃ THANH LĨNH, HUYỆN THANH CHƯƠNG, TỈNH NGHỆ AN</span><br/>
+                                        <span class="text"><strong>Số Điện thoại&emsp;: </strong>086***02</span><br/>
+                                        <span class="text"><strong>Họ tên mẹ&emsp;: </strong>TRẦN THỊ THÌN</span><br/>
+                                        <span class="text"><strong>Năm sinh&emsp;: </strong>1976</span><br/>
+                                        <span class="text"><strong>Nghề nghiệp&emsp;: </strong>NÔNG DÂN</span><br/>
+                                        <span class="text"><strong>Điện thoại&emsp;: </strong>038***32</span><br/>
+                                        <span class="text"><strong>Email&emsp;: </strong>KHÔNG CÓ</span><br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentRight">
+
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

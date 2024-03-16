@@ -1,0 +1,91 @@
+:root{
+    --mau-nen: #f2f1eb;
+
+}
+body{
+    margin:0;
+}
+
+td{
+    vertical-align: top;
+}
+
+ul{
+    list-style-type: none;
+    padding-left:10px;
+}
+li{
+    border-bottom: 1px solid #ccc;
+}
+hr{
+    margin:20px 0;
+    border: 3px solid #FF9900;
+    width: 80%;
+}
+img{
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.contentTitle{
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:red;
+    text-transform: uppercase;
+}
+/* CONTENT PANNEL */
+.contentPanel{
+    margin-top: 15px;
+}
+/* LEFT STYLE */
+.left-ContentPanel{
+    width: 285px;
+}
+.contentLeft{
+    padding: 10px;
+    background-color: var(--mau-nen);
+}
+.contentLeft .contentTitle{
+    text-align: center;
+}
+.item a{
+    text-decoration: none;
+    padding: 5px 7px;
+    line-height: 2;
+    color: #337ab7;
+    font-size: 1em;
+}
+.item a:hover,.item a:active{
+    text-decoration: none;
+    padding: 5px 7px;
+    line-height: 2;
+}
+
+/* RIGHT STYLE */
+.text{
+    line-height: 2em;
+}
+
+.blockContent{
+    width: 50%;
+    padding: 0 15px;
+}
+.avatar{
+    border: 1px solid #777777;
+    box-shadow: 5px 5px 5px 1px #9ec6e7;
+}
+
+.infostudent{
+    display: inline;
+}
+
+
+/* Test */
