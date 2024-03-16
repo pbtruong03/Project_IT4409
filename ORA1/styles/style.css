@@ -46,6 +46,16 @@ img{
     margin-top: 15px;
 }
 /* LEFT STYLE */
+.topLeft{
+    display: flex;
+}
+.small-avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto 13px;
+}
 .left-ContentPanel{
     width: 285px;
 }
