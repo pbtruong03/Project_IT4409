@@ -34,6 +34,9 @@ const loadPage = () =>{
     document.getElementById('class').innerHTML = `${studentInfo.program} ${studentInfo.class} - K${studentInfo.course}`;
     document.getElementById('program').innerHTML = `${studentInfo.program} ${studentInfo.yearEntering}`;
 }
+const changeButton = () => {
+    location.assign('editinfo.html');
+}
 
 
 // Change Page
