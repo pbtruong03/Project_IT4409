@@ -23,22 +23,22 @@
                                 </div>
                                 <ul class="listItems">
                                     <li class="item">
-                                        <a href="">Thư báo</a>
+                                        <a href="#noti">Thư báo <span class="cir-noti">0</span></a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Đổi mật khẩu</a>
+                                        <a href="#change_pw">Đổi mật khẩu</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Cấp lại mật khẩu Email trường</a>
+                                        <a href="#reset_pw">Cấp lại mật khẩu Email trường</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Thoát đăng nhập</a>
+                                        <a href="#logout">Thoát đăng nhập</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Thông tin mật khẩu Email cấp mới</a>
+                                        <a href="#new_pw">Thông tin mật khẩu Email cấp mới</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Xác nhận khai báo y tế</a>
+                                        <a href="#confirm_medical">Xác nhận khai báo y tế</a>
                                     </li>
                                 </ul>
                             </div>
@@ -47,13 +47,13 @@
                                 <h3 class="contentTitle">Quản lý hồ sơ sinh viên</h3>
                                 <ul class="listItems">
                                     <li class="item">
-                                        <a href="">Thông tin sinh viên</a>
+                                        <a href="#student_info">Thông tin sinh viên</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Cập nhật thông tin cá nhân</a>
+                                        <a href="#update_info">Cập nhật thông tin cá nhân</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Thông tin lớp sinh viên</a>
+                                        <a href="#class_info">Thông tin lớp sinh viên</a>
                                     </li>
                                 </ul>
                             </div>
@@ -62,19 +62,19 @@
                                 <h3 class="contentTitle">Đào tạo</h3>
                                 <ul class="listItems">
                                     <li class="item">
-                                        <a href="">Chương trình đào tạo</a>
+                                        <a href="#program">Chương trình đào tạo</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Kế hoạch học tập</a>
+                                        <a href="#plan">Kế hoạch học tập</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Kết quả học tập</a>
+                                        <a href="#result">Kết quả học tập</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Đồ án - tốt nghiệp</a>
+                                        <a href="#project">Đồ án - tốt nghiệp</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Thời khóa biểu tạm thời</a>
+                                        <a href="#search_science">Thời khóa biểu tạm thời</a>
                                     </li>
                                 </ul>
                             </div>
@@ -83,7 +83,7 @@
                                 <h3 class="contentTitle">Tư vấn trực tuyến</h3>
                                 <ul class="listItems">
                                     <li class="item">
-                                        <a href="">Hỏi đáp - Tư vấn trực tuyến</a>
+                                        <a href="#qna">Hỏi đáp - Tư vấn trực tuyến</a>
                                     </li>
                                 </ul>
                             </div>
@@ -92,10 +92,10 @@
                                 <h3 class="contentTitle">Tài chính học vụ</h3>
                                 <ul class="listItems">
                                     <li class="item">
-                                        <a href="">Thông tin công nợ học phí</a>
+                                        <a href="#abroad">Thông tin công nợ học phí</a>
                                     </li>
                                     <li class="item">
-                                        <a href="">Thanh toán học phí trực tuyến</a>
+                                        <a href="#pay_abroad">Thanh toán học phí trực tuyến</a>
                                     </li>
                                 </ul>
                             </div>
@@ -104,7 +104,7 @@
                                 <h3 class="contentTitle">Dịch vụ hành chính</h3>
                                 <ul class="listItems">
                                     <li class="item">
-                                        <a href="">ĐK cấp giấy tờ</a>
+                                        <a href="#reg_doc">ĐK cấp giấy tờ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -117,49 +117,50 @@
                             <div class="">
                                 <h3 class="contentTitle center">Thông tin cá nhân</h3>
                             </div>
-                            <hr>
+                            <hr class="hr-thin">
                             <!-- Thông tin sinh viên -->
                             <div class="contentRight">
                                 <div class="" style="display:inline-flex">
                                     <h3 class="contentTitle">Thông tin sinh viên</h3>
                                 </div>
+                                <hr>
                                 <div class="flex">
-                                    <div class="blockContent" style="width:25%">
+                                    <div class="blockContent" style="width:25%; margin-right: 20px;">
                                         <div>
                                             <img src="../assets/img/avatar.png" alt="anh_dai_dien" class="avatar">
                                         </div>
                                         <div class="center">
                                             <span class="text">
-                                                <strong>MSSV:</strong>
+                                                <i>MSSV:</i>
                                                 <div class="infostudent" id="studentId">20215498</div>
                                             </span>
                                         </div>
                                     </div>
                                     <div class="blockContent">
-                                        <span class="text"><strong>Họ và tên&emsp;: </strong><input type="text" id="fullName"></span><br/>
-                                        <span class="text"><strong>Năm vào trường&emsp;: </strong><input type="number" id="yearEntering" pattern="[0-9]{4}"></span><br/>
-                                        <span class="text"><strong>Bậc đào tạo&emsp;: </strong><select id="eduType" class="infostudent"></select></span><br/>
-                                        <span class="text"><strong>Chương trình&emsp;: </strong><select id="program" class="infostudent"></select></span><br/>
-                                        <span class="text"><strong>Khoa/Viện quản lý&emsp;: </strong><select id="school" class="infostudent"></select></span><br/>
-                                        <span class="text"><strong>Tình trạng học tập&emsp;: </strong><select id="status" class="infostudent"></select></span><br/>
+                                        <span class="text"><i>Họ và tên&emsp;: </i><input type="text" id="fullName" class="infostudent"></span><br/>
+                                        <span class="text"><i>Năm vào trường&emsp;: </i><input type="number" id="yearEntering" class="infostudent" pattern="[0-9]{4}"></span><br/>
+                                        <span class="text"><i>Bậc đào tạo&emsp;: </i><select id="eduType" class="infostudent"></select></span><br/>
+                                        <span class="text"><i>Chương trình&emsp;: </i><select id="program" class="infostudent"></select></span><br/>
+                                        <span class="text"><i>Khoa/Viện quản lý&emsp;: </i><select id="school" class="infostudent"></select></span><br/>
+                                        <span class="text"><i>Tình trạng học tập&emsp;: </i><select id="status" class="infostudent"></select></span><br/>
                                     </div>
                                     <div class="blockContent">
-                                        <span class="text"><strong>Giới tính&emsp;: </strong>
-                                          <form style="display: inline;">
+                                        <span class="text"><i>Giới tính&emsp;: </i>
+                                          <form style="display: inline;" class="infostudent">
                                             <input type="radio" id="male" name="sex" value="Nam">
                                             <label for="male">Nam</label>
                                             <input type="radio" id="female" name="sex" value="Nữ">
                                             <label for="female">Nữ</label>
                                           </form>
                                         </span><br/>
-                                        <span class="text"><strong>Lớp&emsp;: </strong><input type="" id="class" class="infostudent"></span><br/>
-                                        <span class="text"><strong>Khóa học&emsp;: </strong><input type="number" id="course" class="infostudent"></span><br/>
-                                        <span class="text"><strong>Email&emsp;: </strong><input type="email" id="email" class="infostudent"></span><br/>
+                                        <span class="text"><i>Lớp&emsp;: </i><input type="" id="class" class="infostudent"></span><br/>
+                                        <span class="text"><i>Khóa học&emsp;: </i><input type="number" id="course" class="infostudent"></span><br/>
+                                        <span class="text"><i>Email&emsp;: </i><input type="email" id="email" class="infostudent"></span><br/>
                                     </div>
                                 </div>
-                                <div style="text-align: end;">
-                                    <button class="submit" onclick="submitChange()">OK</button>
-                                    <button class="cancel" onclick="cancelChange()">Cancel</button>
+                                <div style="text-align: end; margin-right:10%;">
+                                    <button class="btn submit" onclick="submitChange()">OK</button>
+                                    <button class="btn cancel" onclick="cancelChange()">Cancel</button>
                                 </div>
                             </div>
                             <hr>
@@ -168,14 +169,14 @@
                                 <h3 class="contentTitle">Thông tin học tập</h3>
                                 <div class="flex">
                                     <div class="blockContent">
-                                        <span class="text"><strong>Tổng kết học kỳ&emsp;: </strong>20231</span><br/>
-                                        <span class="text"><strong>Trung bình tích lũy&emsp;: </strong>3.28</span><br/>
-                                        <span class="text"><strong>Số TC nợ đăng ký&emsp;: </strong>0</span><br/>
+                                        <span class="text"><i>Tổng kết học kỳ&emsp;: </i><strong>20231</strong></span><br/>
+                                        <span class="text"><i>Trung bình tích lũy&emsp;: </i><strong>3.28</strong></span><br/>
+                                        <span class="text"><i>Số TC nợ đăng ký&emsp;: </i><strong>0</strong></span><br/>
                                     </div>
                                     <div class="blockContent">
-                                        <span class="text"><strong>Số tín chỉ tích lũy&emsp;: </strong>83</span><br/>
-                                        <span class="text"><strong>Trình độ sinh viên&emsp;: </strong>3</span><br/>
-                                        <span class="text"><strong>Mức cảnh báo&emsp;: </strong>M0</span><br/>
+                                        <span class="text"><i>Số tín chỉ tích lũy&emsp;: </i><strong>83</strong></span><br/>
+                                        <span class="text"><i>Trình độ sinh viên&emsp;: </i><strong>3</strong></span><br/>
+                                        <span class="text"><i>Mức cảnh báo&emsp;: </i><strong>M0</strong></span><br/>
                                     </div>
                                 </div>
                             </div>
@@ -185,27 +186,27 @@
                                 <h3 class="contentTitle">Thông tin cá nhân</h3>
                                 <div class="flex">
                                     <div class="blockContent">
-                                        <span class="text"><strong>Dân tộc&emsp;: </strong>KINH</span><br/>
-                                        <span class="text"><strong>Năm TN cấp 3&emsp;: </strong>2021</span><br/>
-                                        <span class="text"><strong>Địa chỉ&emsp;: </strong>XÃ THANH LĨNH, HUYỆN THANH CHƯƠNG, TỈNH NGHỆ AN</span><br/>
-                                        <span class="text"><strong>Số CMTND&emsp;: </strong>188***49</span><br/>
-                                        <span class="text"><strong>Nơi cấp&emsp;: </strong>NGHỆ AN</span><br/>
-                                        <span class="text"><strong>Họ tên bố&emsp;: </strong>PHAN BÁ HÓA</span><br/>
-                                        <span class="text"><strong>Năm sinh&emsp;: </strong>1968</span><br/>
-                                        <span class="text"><strong>Nghề nghiệp&emsp;: </strong>NÔNG DÂN</span><br/>
-                                        <span class="text"><strong>Điện thoại&emsp;: </strong>034***70</span><br/>
-                                        <span class="text"><strong>Email&emsp;: </strong>KHÔNG CÓ</span><br/>
+                                        <span class="text"><i>Dân tộc&emsp;: </i><strong>KINH</strong></span><br/>
+                                        <span class="text"><i>Năm TN cấp 3&emsp;: </i><strong>2021</strong></span><br/>
+                                        <span class="text"><i>Địa chỉ&emsp;: </i><strong>XÃ THANH LĨNH, HUYỆN THANH CHƯƠNG, TỈNH NGHỆ AN</strong></span><br/>
+                                        <span class="text"><i>Số CMTND&emsp;: </i><strong>188***49</strong></span><br/>
+                                        <span class="text"><i>Nơi cấp&emsp;: </i><strong>NGHỆ AN</strong></span><br/>
+                                        <span class="text"><i>Họ tên bố&emsp;: </i><strong>PHAN BÁ HÓA</strong></span><br/>
+                                        <span class="text"><i>Năm sinh&emsp;: </i><strong>1968</strong></span><br/>
+                                        <span class="text"><i>Nghề nghiệp&emsp;: </i><strong>NÔNG DÂN</strong></span><br/>
+                                        <span class="text"><i>Điện thoại&emsp;: </i><strong>034***70</strong></span><br/>
+                                        <span class="text"><i>Email&emsp;: </i><strong>KHÔNG CÓ</strong></span><br/>
                                     </div>
                                     <div class="blockContent">
-                                        <span class="text"><strong>Tôn giáo&emsp;: </strong>KHÔNG</span><br/>
-                                        <span class="text"><strong>Trường THPT&emsp;: </strong>THPT THANH CHƯƠNG 1 - NGHỆ AN</span><br/>
-                                        <span class="text"><strong>Hộ khẩu&emsp;: </strong>XÃ THANH LĨNH, HUYỆN THANH CHƯƠNG, TỈNH NGHỆ AN</span><br/>
-                                        <span class="text"><strong>Số Điện thoại&emsp;: </strong>086***02</span><br/>
-                                        <span class="text"><strong>Họ tên mẹ&emsp;: </strong>TRẦN THỊ THÌN</span><br/>
-                                        <span class="text"><strong>Năm sinh&emsp;: </strong>1976</span><br/>
-                                        <span class="text"><strong>Nghề nghiệp&emsp;: </strong>NÔNG DÂN</span><br/>
-                                        <span class="text"><strong>Điện thoại&emsp;: </strong>038***32</span><br/>
-                                        <span class="text"><strong>Email&emsp;: </strong>KHÔNG CÓ</span><br/>
+                                        <span class="text"><i>Tôn giáo&emsp;: </i><strong>KHÔNG</strong></span><br/>
+                                        <span class="text"><i>Trường THPT&emsp;: </i><strong>THPT THANH CHƯƠNG 1 - NGHỆ AN</strong></span><br/>
+                                        <span class="text"><i>Hộ khẩu&emsp;: </i><strong>XÃ THANH LĨNH, HUYỆN THANH CHƯƠNG, TỈNH NGHỆ AN</strong></span><br/>
+                                        <span class="text"><i>Số Điện thoại&emsp;: </i><strong>086***02</strong></span><br/>
+                                        <span class="text"><i>Họ tên mẹ&emsp;: </i><strong>TRẦN THỊ THÌN</strong></span><br/>
+                                        <span class="text"><i>Năm sinh&emsp;: </i><strong>1976</strong></span><br/>
+                                        <span class="text"><i>Nghề nghiệp&emsp;: </i><strong>NÔNG DÂN</strong></span><br/>
+                                        <span class="text"><i>Điện thoại&emsp;: </i><strong>038***32</strong></span><br/>
+                                        <span class="text"><i>Email&emsp;: </i><strong>KHÔNG CÓ</strong></span><br/>
                                     </div>
                                 </div>
                             </div>

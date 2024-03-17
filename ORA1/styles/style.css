@@ -54,7 +54,14 @@ img{
     width: 40px;
     border-radius: 50%;
     object-fit: cover;
-    margin: auto 13px;
+    margin: auto 10px;
+}
+.cir-noti{
+    padding: 0 4px;
+    color: white;
+    background-color: rgb(190, 18, 18);
+    border-radius: 50%;
+    text-align: center;
 }
 .left-ContentPanel{
     width: 285px;
@@ -91,11 +98,39 @@ img{
 .avatar{
     border: 1px solid #777777;
     box-shadow: 5px 5px 5px 1px #9ec6e7;
+
 }
 
 .infostudent{
     display: inline;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
 /* Test */
+.hr-thin{
+    width: 92%;
+    margin: 18px auto 28px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/*  */
+.submit{
+    background-color:rgba(0, 255, 128, 0.7);
+}
+.cancel{
+    background-color: rgba(255, 99, 71, 0.7);
+}
+.btn{
+    padding: 5px 20px;
+    margin: auto 10px;
+    border-radius: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    border-color: #ccc;
+    color: #484343;
+}

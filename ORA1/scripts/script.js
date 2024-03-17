@@ -15,10 +15,8 @@ const loadData = () =>{
     if(localStorage.getItem("studentInfo") ===  null){
         const jsonStudentInfo = JSON.stringify(studentInfo);
         localStorage.setItem("studentInfo", jsonStudentInfo);
-        console.log("set data");
     }
     studentInfo = JSON.parse(localStorage.getItem("studentInfo"));
-    console.log("load data");
 }
 
 
