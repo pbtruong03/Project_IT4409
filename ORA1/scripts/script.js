@@ -95,7 +95,7 @@ const inputStatus = () =>{
 const loadEditPage = () =>{
     loadData();
     document.getElementById("fullNametitle").innerHTML = studentInfo.fullName;
-    const listInfo =['fullName','yearEntering','course','email','class'];
+    const listInfo =['fullName','studentId','yearEntering','course','email','class'];
     for(let i = 0; i< listInfo.length; i++){
         document.getElementById(listInfo[i]).value = studentInfo[listInfo[i]];
     }
@@ -107,7 +107,7 @@ const loadEditPage = () =>{
 }
 // Submit Change Info
 const submitChange = () =>{
-    const listInfo =['fullName','yearEntering','eduType','program','school','status','class','course','email',];
+    const listInfo =['fullName','yearEntering','eduType','program','school','status','class','course','email','studentId'];
     for(let i = 0; i<listInfo.length; i++){
         studentInfo[listInfo[i]] = document.getElementById(listInfo[i]).value;
         console.log(`Save: ${listInfo[i]} : ${document.getElementById(listInfo[i]).value}`)

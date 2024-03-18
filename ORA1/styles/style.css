@@ -22,6 +22,9 @@ hr{
     border: 3px solid #FF9900;
     width: 80%;
 }
+input{
+    border-color: #ccc;
+}
 img{
     width: 100%;
 }
