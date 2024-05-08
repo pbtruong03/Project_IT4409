@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://kit.fontawesome.com/bc4d8a1311.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script src="../scripts/script.js"></script>
+</head>
+<body onload="loadPage()">
+    <div>
+        <table class="contentPanel">
+            <tbody>
+                <tr>
+                    <!-- LEFT CONTENTS -->
+                    <td>
+                        <div class="left-ContentPanel">
+                            <div class="contentLeft">
+                                <div class="topLeft">
+                                    <img class="small-avatar" src="../assets/img/avatar.png" alt="">
+                                    <h3 class="contentTitle" id = "fullNametitle">Phan Bá Trường</h3>
+                                </div>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#noti">Thư báo <span class="cir-noti">0</span></a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#change_pw">Đổi mật khẩu</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#reset_pw">Cấp lại mật khẩu Email trường</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#logout">Thoát đăng nhập</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#new_pw">Thông tin mật khẩu Email cấp mới</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#confirm_medical">Xác nhận khai báo y tế</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Quản lý hồ sơ sinh viên</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#student_info">Thông tin sinh viên</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#update_info">Cập nhật thông tin cá nhân</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#class_info">Thông tin lớp sinh viên</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Đào tạo</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#program">Chương trình đào tạo</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#plan">Kế hoạch học tập</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#result">Kết quả học tập</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#project">Đồ án - tốt nghiệp</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#search_science">Thời khóa biểu tạm thời</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Tư vấn trực tuyến</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#qna">Hỏi đáp - Tư vấn trực tuyến</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Tài chính học vụ</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#abroad">Thông tin công nợ học phí</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#pay_abroad">Thanh toán học phí trực tuyến</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Dịch vụ hành chính</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#reg_doc">ĐK cấp giấy tờ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                        </div>
+                    </td>
+                    <!-- RIGHT CONTENT -->
+                    <td style="width:100%;" id="studentInfo">
+                        <div class="right-ContentPanel">
+                            <div class="">
+                                <h3 class="contentTitle center" style="display:inline">Thông tin cá nhân</h3>
+                                <button class="btn-icon" onclick="savePDF()"><i class="fa-solid fa-file-pdf pdf"></i></button>
+                            </div>
+                            <!-- Thông tin sinh viên -->
+                            <div class="groupItem">
+                                <div class="titleGroup">
+                                    <h3 class="groupName" ondblclick="changeNameGroup(event)">Thông tin sinh viên</h3>
+                                    <input onblur="saveNameGroup(event)" onkeypress="keyPress(event)" class="hidden" type="text" value="Thông tin sinh viên">
+                                    <h3 class="groupName">_20215498</h3>
+                                    <div class="buttonContainer">
+                                        <button class="btn" onclick="addItem(event)">Add Info Item</button>
+                                        <button class="btn" onclick="addGroup()">Add Group Item</button>
+                                    </div>
+                                </div>
+                                <div class="itemContainer">
+                                    <!-- Info Item -->
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- Choose Type -->
+                        <div class="chooseType">
+                            <h3>Lựa chọn kiểu input</h3>
+                            <div>
+                                <select id="inputType" class="" onchange="changeType()">
+                                    <option value="text">Text</option>
+                                    <option value="email">Email</option>
+                                    <option value="number">Number</option>
+                                    <option value="date">Date</option>
+                                </select>
+                            </div>
+                            <div class="buttonContainer flex-end">
+                                <button class="btn cancel" onclick="cancelCreateItem()">Hủy bỏ</button>
+                                <button class="btn submit" onclick="createItem()">Xác nhận</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://kit.fontawesome.com/bc4d8a1311.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+</head>
+<body onload="loadEditPage()">
+    <div>
+        <table class="contentPanel">
+            <tbody>
+                <tr>
+                    <!-- LEFT CONTENTS -->
+                    <td>
+                        <div class="left-ContentPanel">
+                            <div class="contentLeft">
+                                <div class="topLeft">
+                                    <img class="small-avatar" src="../assets/img/avatar.png" alt="">
+                                    <h3 class="contentTitle" id = "fullNametitle">Họ và tên</h3>
+                                </div>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#noti">Thư báo <span class="cir-noti">0</span></a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#change_pw">Đổi mật khẩu</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#reset_pw">Cấp lại mật khẩu Email trường</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#logout">Thoát đăng nhập</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#new_pw">Thông tin mật khẩu Email cấp mới</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#confirm_medical">Xác nhận khai báo y tế</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Quản lý hồ sơ sinh viên</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#student_info">Thông tin sinh viên</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#update_info">Cập nhật thông tin cá nhân</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#class_info">Thông tin lớp sinh viên</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Đào tạo</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#program">Chương trình đào tạo</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#plan">Kế hoạch học tập</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#result">Kết quả học tập</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#project">Đồ án - tốt nghiệp</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#search_science">Thời khóa biểu tạm thời</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Tư vấn trực tuyến</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#qna">Hỏi đáp - Tư vấn trực tuyến</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Tài chính học vụ</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#abroad">Thông tin công nợ học phí</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#pay_abroad">Thanh toán học phí trực tuyến</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="contentLeft">
+                                <h3 class="contentTitle">Dịch vụ hành chính</h3>
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <a href="#reg_doc">ĐK cấp giấy tờ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                        </div>
+                    </td>
+                    <!-- RIGHT CONTENT -->
+                    <td style="width: 100%">
+                        <div class="right-ContentPanel">
+                            <div class="">
+                                <h3 class="contentTitle center">Thông tin cá nhân</h3>
+                            </div>
+                            <hr class="hr-thin">
+                            <!-- Thông tin sinh viên -->
+                            <div class="contentRight" id="edit-info-student">
+                                <div class="" style="display:flex; justify-content: space-between">
+                                    <h3 class="contentTitle">Thông tin sinh viên</h3>
+                                    <div class="button-container">
+                                        <button class="btn submit" onclick="submitChange()">OK</button>
+                                        <button class="btn cancel" onclick="cancelChange()">Cancel</button>
+                                        <button class="btn reset" onclick="resetInfo()">Reset</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="flex">
+                                    <div class="blockContent" style="width:20%; margin: 0 30px 0 20px;">
+                                        <div>
+                                            <img src="../assets/img/avatar.png" alt="anh_dai_dien" class="avatar">
+                                        </div>
+                                        <div class="center">
+                                            <span class="text">
+                                                <i>MSSV:</i>
+                                                <input type="text" id="studentId" class="infostudent" style="width:60px" pattern="[0-9]{8}">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="blockContent">
+                                        <span class="text"><i>Họ và tên&emsp;: </i><input type="text" id="fullName" class="infostudent"></span><br/>
+                                        <span class="text"><i>Năm vào trường&emsp;: </i><input type="number" id="yearEntering" class="infostudent" pattern="[0-9]{4}"></span><br/>
+                                        <span class="text"><i>Bậc đào tạo&emsp;: </i><select id="eduType" class="infostudent"></select></span><br/>
+                                        <span class="text"><i>Chương trình&emsp;: </i><select id="program" class="infostudent"></select></span><br/>
+                                        <span class="text"><i>Khoa/Viện quản lý&emsp;: </i><select id="school" class="infostudent"></select></span><br/>
+                                        <span class="text"><i>Tình trạng học tập&emsp;: </i><select id="status" class="infostudent"></select></span><br/>
+                                    </div>
+                                    <div class="blockContent">
+                                        <span class="text"><i>Giới tính&emsp;: </i>
+                                          <form style="display: inline;" class="infostudent">
+                                            <input type="radio" id="male" name="sex" value="Nam">
+                                            <label for="male">Nam</label>
+                                            <input type="radio" id="female" name="sex" value="Nữ">
+                                            <label for="female">Nữ</label>
+                                          </form>
+                                        </span><br/>
+                                        <span class="text"><i>Lớp&emsp;: </i><input type="" id="class" class="infostudent"></span><br/>
+                                        <span class="text"><i>Khóa học&emsp;: </i><input type="number" id="course" class="infostudent"></span><br/>
+                                        <span class="text"><i>Email&emsp;: </i><input type="email" id="email" class="infostudent"></span><br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Thông tin học tập -->
+                            <div class="contentRight">
+                                <h3 class="contentTitle">Thông tin học tập</h3>
+                                <div class="flex">
+                                    <div class="blockContent">
+                                        <span class="text"><i>Tổng kết học kỳ&emsp;: </i><strong>20231</strong></span><br/>
+                                        <span class="text"><i>Trung bình tích lũy&emsp;: </i><strong>3.28</strong></span><br/>
+                                        <span class="text"><i>Số TC nợ đăng ký&emsp;: </i><strong>0</strong></span><br/>
+                                    </div>
+                                    <div class="blockContent">
+                                        <span class="text"><i>Số tín chỉ tích lũy&emsp;: </i><strong>83</strong></span><br/>
+                                        <span class="text"><i>Trình độ sinh viên&emsp;: </i><strong>3</strong></span><br/>
+                                        <span class="text"><i>Mức cảnh báo&emsp;: </i><strong>M0</strong></span><br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Thông tin cá nhân -->
+                            <div class="contentRight">
+                                <h3 class="contentTitle">Thông tin cá nhân</h3>
+                                <div class="flex">
+                                    <div class="blockContent">
+                                        <span class="text"><i>Dân tộc&emsp;: </i><strong>KINH</strong></span><br/>
+                                        <span class="text"><i>Năm TN cấp 3&emsp;: </i><strong>2021</strong></span><br/>
+                                        <span class="text"><i>Địa chỉ&emsp;: </i><strong>XÃ THANH LĨNH, HUYỆN THANH CHƯƠNG, TỈNH NGHỆ AN</strong></span><br/>
+                                        <span class="text"><i>Số CMTND&emsp;: </i><strong>188***49</strong></span><br/>
+                                        <span class="text"><i>Nơi cấp&emsp;: </i><strong>NGHỆ AN</strong></span><br/>
+                                        <span class="text"><i>Họ tên bố&emsp;: </i><strong>PHAN BÁ HÓA</strong></span><br/>
+                                        <span class="text"><i>Năm sinh&emsp;: </i><strong>1968</strong></span><br/>
+                                        <span class="text"><i>Nghề nghiệp&emsp;: </i><strong>NÔNG DÂN</strong></span><br/>
+                                        <span class="text"><i>Điện thoại&emsp;: </i><strong>034***70</strong></span><br/>
+                                        <span class="text"><i>Email&emsp;: </i><strong>KHÔNG CÓ</strong></span><br/>
+                                    </div>
+                                    <div class="blockContent">
+                                        <span class="text"><i>Tôn giáo&emsp;: </i><strong>KHÔNG</strong></span><br/>
+                                        <span class="text"><i>Trường THPT&emsp;: </i><strong>THPT THANH CHƯƠNG 1 - NGHỆ AN</strong></span><br/>
+                                        <span class="text"><i>Hộ khẩu&emsp;: </i><strong>XÃ THANH LĨNH, HUYỆN THANH CHƯƠNG, TỈNH NGHỆ AN</strong></span><br/>
+                                        <span class="text"><i>Số Điện thoại&emsp;: </i><strong>086***02</strong></span><br/>
+                                        <span class="text"><i>Họ tên mẹ&emsp;: </i><strong>TRẦN THỊ THÌN</strong></span><br/>
+                                        <span class="text"><i>Năm sinh&emsp;: </i><strong>1976</strong></span><br/>
+                                        <span class="text"><i>Nghề nghiệp&emsp;: </i><strong>NÔNG DÂN</strong></span><br/>
+                                        <span class="text"><i>Điện thoại&emsp;: </i><strong>038***32</strong></span><br/>
+                                        <span class="text"><i>Email&emsp;: </i><strong>KHÔNG CÓ</strong></span><br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentRight">
+
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

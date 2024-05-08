@@ -123,6 +123,9 @@ img {
 .cancel {
   background-color: rgba(255, 99, 71, 0.7);
 }
+.reset {
+  background-color: b;
+}
 .btn {
   padding: 5px 20px;
   margin: auto 10px;
@@ -132,4 +135,12 @@ img {
   cursor: pointer;
   border-color: #ccc;
   color: #484343;
+}
+
+.button-container {
+  margin: auto 60px auto 0px;
+}
+
+#edit-info-student {
+  display: none;
 }
